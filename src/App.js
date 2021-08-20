@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import './styles/App.css';
+import './styles/App.scss';
 
 import Home from './pages/Index';
 import Resister from './pages/Resister';

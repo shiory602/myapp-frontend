@@ -1,16 +1,40 @@
 import React from 'react';
-import { FormControl, InputLabel, Input, FormHelperText } from '@material-ui/core';
-import '../styles/App.css'
+import Layout from '../components/Layout'
+import '../styles/App.scss'
+import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& .MuiTextField-root': {
+      margin: theme.spacing(1),
+      width: '25ch',
+    },
+  },
+}));
 
 function ForgotPassword() {
+  const classes = useStyles();
   return (
-    <div className='App'>
-      <FormControl>
-        <InputLabel htmlFor="my-input">Email address</InputLabel>
-        <Input id="my-input" aria-describedby="my-helper-text" />
-        <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
-      </FormControl>
-    </div>
+    <Layout>
+      <div className='App'>
+        <form className={classes.root} noValidate autoComplete="off">
+          <div>
+            <TextField
+              id="outlined-textarea"
+              label="Email"
+              placeholder="Your email..."
+              multiline
+              variant="outlined"
+            />
+          </div>
+          <Button variant="contained" color="primary">
+            Reset Password
+          </Button>
+        </form>
+      </div>
+    </Layout>
   )
 }
 

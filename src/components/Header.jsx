@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/App.css'
+import '../styles/App.scss'
 import Logo from '../images/pngegg.png'
 
 function Header() {
   return (
     <div className='Header'>
       <div className='Header-inner'>
-        <img src={Logo} height='100px' alt='logo' />
+        <Link to='/'>
+          <img src={Logo} height='100px' alt='logo' />
+        </Link>
         <div className='Header-menu'>
           <ul>
             <li><Link to='/resister' color="primary">Register</Link></li>
