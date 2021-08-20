@@ -2,7 +2,7 @@ import React from 'react';
 import { FormControl, InputLabel, Input, FormHelperText } from '@material-ui/core';
 import '../styles/App.css'
 
-function Login() {
+function ForgotPassword() {
   return (
     <div className='App'>
       <FormControl>
@@ -14,4 +14,4 @@ function Login() {
   )
 }
 
-export default Login;
+export default ForgotPassword;

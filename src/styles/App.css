@@ -16,14 +16,30 @@
   }
 }
 
-.App-header {
+.Header {
   min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   background-color: aquamarine;
+}
+
+.Header-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Header-menu {
+  margin-right: 10px;
+}
+
+.Header-menu ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Header-menu ul li {
+  margin-left: 10px;
 }
 
 .App-footer {

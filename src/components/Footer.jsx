@@ -1,9 +1,9 @@
 import '../styles/App.css'
 
-export default function Footer(props) {
+export default function Footer({footer}) {
   return (
       <div className="App-footer">
-          <div>{props.footer}</div>
+          <div>{footer}</div>
       </div>
   )
 }
