@@ -1,15 +1,16 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import '../styles/Layout.scss'
 import Box from '@material-ui/core/Box';
 
 const Layout = ({children}) => (
   <React.Fragment>
-    <Box minHeight='100vh'>
-      <Header />
-      {children}
-      <Footer footer="copyright SHIORI-Suzuki." />
-    </Box>
+    <Header />
+      <Box className='m-top no-line' minHeight='80vh'>
+        {children}
+      </Box>
+    <Footer footer="copyright SHIORI-Suzuki." />
   </React.Fragment>
 )
 

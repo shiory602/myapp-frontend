@@ -8,6 +8,18 @@ import Login from './pages/Login';
 import ForgotPassword from './pages/ForgotPassword';
 import Logout from './pages/Logout';
 
+
+// function whenLoginIsClick() {
+//   fetch('www.google.com/')
+//     .then(theThingThatCameBack = (param) => {
+//       return param;
+//     )}
+// }
+
+// function whenLogoutIsClick() {
+  
+// }
+
 function App() {
   return (
     <BrowserRouter>
